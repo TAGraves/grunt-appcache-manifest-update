@@ -1,0 +1,39 @@
+{
+  "name": "grunt-appcache-manifest-update",
+  "description": "Automatically update the appcache manifest file for HTML5 appcache.",
+  "version": "0.1.1",
+  "homepage": "https://github.com/tommygraves/grunt-appcache-manifest-update",
+  "author": {
+    "name": "Tommy Graves",
+    "email": "tommy@infinitry.net",
+    "url": "http://tagraves.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tommygraves/grunt-appcache-manifest-update.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tommygraves/grunt-appcache-manifest-update/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tommygraves/grunt-appcache-manifest-update/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
