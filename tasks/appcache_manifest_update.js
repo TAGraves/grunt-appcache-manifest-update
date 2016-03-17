@@ -10,15 +10,10 @@
 
 module.exports = function(grunt) {
 
-  // Please see the Grunt documentation for more information regarding task
-  // creation: http://gruntjs.com/creating-tasks
 
   grunt.registerMultiTask('appcacheupdate', 'Automatically update the appcache manifest file for HTML5 appcache.', function() {
     // Merge task-specific and/or target-specific options with these defaults.
-    var options = this.options({
-      separator: ','
-    });
-
+    
     // Iterate over all specified file groups.
     this.files.forEach(function(f) {
       // Concat specified files.
@@ -33,9 +28,8 @@ module.exports = function(grunt) {
       }).map(function(filepath) {
         // Read file source.
         var file = grunt.file.read(filepath);
-        return file.replace(/# AppCache Auto Update: [0-9]*/, '# AppCache Auto Update: ' + Date.now());e.replace(/# AppCache Auto Update: [0-9]*/, '# AppCache Auto Update: ' + Date.now());
-      }).join(grunt.util.normalizelf(options.separator));
-
+        return file.replace(/# AppCache Auto Update: [0-9]*/, '# AppCache Auto Update: ' + Date.now() + ' ');
+      });
 
       // Write the destination file.
       grunt.file.write(f.dest, src);
