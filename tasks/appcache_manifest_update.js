@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       }).map(function(filepath) {
         // Read file source.
         var file = grunt.file.read(filepath);
-        return file.replace(/# AppCache Auto Update: [0-9]*/, '# AppCache Auto Update: ' + Date.now() + ' ');
+        return file.replace(/# AppCache Auto Update: [0-9]*/, '# AppCache Auto Update: ' + Date.now());
       });
 
       // Write the destination file.
